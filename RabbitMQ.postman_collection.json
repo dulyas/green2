@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "b1c63825-d9e4-4f62-929a-fab06574308f",
+		"name": "RabbitMQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26550674"
+	},
+	"item": [
+		{
+			"name": "postRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number1\": \"3\",\r\n    \"number2\": \"2\",\r\n    \"senderId\": \"14\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost}}/post-request",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"post-request"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost",
+			"value": "localhost:1338",
+			"type": "string"
+		}
+	]
+}
