@@ -5,7 +5,7 @@ export default class RabbitMQ {
   private channel: Channel | undefined;
   private static instance: RabbitMQ;
   constructor() {
-    // защитим от лишних коннектов с помощью паттерна синглтон
+    // защитимся от лишних экземпляров с помощью паттерна синглтон
     if (RabbitMQ.instance) {
       return RabbitMQ.instance;
     }
